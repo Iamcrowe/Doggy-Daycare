@@ -1,0 +1,71 @@
+/* Responsive Styles */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-list.active {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #008080;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .features {
+        padding: 10px 0;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .gallery-item {
+        flex: 1 1 45%;
+        margin: 5px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .feature {
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    .feature:last-child {
+        margin-right: 0;
+    }
+
+    .gallery-item {
+        flex: 1 1 30%;
+    }
+}
